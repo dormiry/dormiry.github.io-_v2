@@ -1,0 +1,157 @@
+@import url("https://use.typekit.net/lxp1wlv.css");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: #CB672F;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+a:hover {
+  color: #CBC7C4;
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+}
+
+/* FONTS */
+@font-face {
+  font-family: "bluunext-bold";
+  src: url("/assets/bluunext-bold.ttf");
+  font-display: auto;
+  font-style: normal;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "bluunext-bold-italic";
+  src: url("/assets/bluunext-bolditalic.ttf");
+  font-display: auto;
+  font-style: normal;
+  font-weight: 700;
+}
+
+/* TEXT-STYLES */
+h1 {
+  font-family: futura-pt, sans-serif;
+  font-weight: 600;
+  font-style: italic;
+  text-transform: uppercase;
+  font-size: 25px;
+  margin-bottom: 10px;
+  color: #292726;
+}
+
+h2 {
+  font-family: "bluunext-bold";
+  font-display: auto;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 75px;
+  font-size: 50px;
+  color: #292726;
+}
+
+h3 {
+  font-family: futura-pt, sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+
+span.bluu-italic {
+  font-family: "bluunext-bold-italic";
+  font-display: auto;
+  font-style: normal;
+  font-weight: 700;
+}
+
+/* GENERAL STYLES */
+body {
+  width: 100%;
+  height: 100vh;
+  background-color: #FEFAF7;
+  cursor: none;
+}
+
+main {
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* BUTTON */
+button {
+  font-family: futura-pt, sans-serif;
+  font-weight: 600;
+  letter-spacing: 2.5px;
+  font-style: normal;
+  text-transform: uppercase;
+  background-color: #FEFAF7;
+  border: solid 2px #292726;
+  color: #CB672F;
+  padding: 20px 80px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 25px;
+}
+
+button:hover {
+  background-color: #292726;
+  color: #CBC7C4;
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
+}
+
+/* HOME PAGE */
+section.index-intro {
+  height: 65vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.home-text {
+  max-width: 900px;
+  margin-bottom: 80px;
+}
+
+@media only screen and (max-width: 800px) {
+  h1 {
+    font-size: 20px;
+  }
+  h2 {
+    font-size: 35px;
+    line-height: 50px;
+  }
+  button {
+    letter-spacing: 1px;
+    background-color: #FEFAF7;
+    font-size: 20px;
+    padding: 20px 0;
+    width: 85vw;
+    white-space: nowrap;
+  }
+  section.index-intro {
+    margin-top: 80px;
+  }
+}
+/*# sourceMappingURL=master.css.map */

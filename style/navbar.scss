@@ -1,0 +1,157 @@
+$white: #FEFAF7;
+$black: #292726;
+$accent: #CB672F;
+$grey: #DED9D5;
+
+$main-w: 85%;
+$margin-LR: 150px;
+$margin-UP: 100px;
+
+* { cursor: none;}
+
+//  NAVIGATION
+nav {
+     width: $main-w;
+     display: flex;
+     flex-flow: row nowrap;
+     justify-content: space-between;
+     align-items: center;
+     margin-left: auto;
+     margin-right: auto;
+     padding-top: $margin-UP;
+     margin-bottom: 40px;
+     z-index: 99;
+}
+
+   .sticky {
+     position: fixed;
+     width: $main-w;
+     left: 0;
+     right: 0;
+   }
+   
+   
+.home-link {
+     display: flex;
+     flex-flow: row nowrap;
+     font-family: futura-pt, sans-serif;
+     font-weight: 600;
+     font-style: normal;     
+     text-transform: uppercase;
+     font-size: 18px;
+
+     p { color: $black; margin-left: 25px; }
+}
+
+.toggle-btn {
+     color: $accent;
+     width: 40px;
+     height: 25px;
+     z-index: 2;
+}
+
+span.one {
+     position: absolute;
+     width: 40px;
+     height: 2px;
+     background: $accent;
+}
+
+span.two {
+     position: absolute;
+     width: 40px;
+     height: 2px;
+     background: $accent;
+     margin-top: 10px;
+}
+
+span.three {
+     position: absolute;
+     width: 30px;
+     height: 2px;
+     background: $accent;
+     margin-top: 20px;
+}
+
+.menu {
+     z-index: 1;
+     position: absolute;
+     background: $black;
+     height: 100vh;
+     width: 100%;
+     top: -100%;
+}
+
+.data {
+     padding: 12em 0 0 0;
+     height: 90%;
+     display: flex;
+     flex-flow: column nowrap;
+     justify-content: space-between;
+     z-index: 1;
+}
+
+ul {
+     list-style: none;
+     text-align: right;
+     width: $main-w;
+     margin-left: auto;
+     margin-right: auto;
+     display: flex;
+     flex-flow: column nowrap;
+}
+
+ul.page-links {
+     margin-bottom: 30px;
+}
+
+li {
+     color: $accent;
+     font-size: 60px;
+     font-family: "bluunext-bold";
+     margin-bottom: 10px;
+}
+
+.sub-li {
+     font-size: 20px;
+     font-family: futura-pt, sans-serif;
+     font-weight: 600;
+     font-style: normal;     
+     text-transform: uppercase;
+}
+
+.credit-li {
+     color: $grey;
+     font-size: 15px;
+     letter-spacing: 1px;
+     font-family: futura-pt, sans-serif;
+     font-weight: 600;
+     font-style: normal;     
+     text-transform: uppercase;
+     margin-bottom: 0;
+}
+
+
+// MOBILE STYLES
+
+@media only screen and (max-width: 800px) { 
+
+     nav {
+          padding-top: 35px;
+     }
+
+     .home-link {
+          font-size: 16px;
+          p { margin-left: 15px; }
+     }
+
+     .toggle-btn {
+          width: 30px;
+          span.one, span.two { width: 30px;}
+          span.three { width: 20px;}
+     }
+    
+     .data {
+          padding: 7em 0 0 0;
+     }
+}

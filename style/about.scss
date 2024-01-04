@@ -1,0 +1,35 @@
+
+ $white: #FEFAF7;
+ $black: #292726;
+ $accent: #CB672F;
+ $grey: #CBC7C4; 
+ 
+ .wrapper {
+    height: 500px;
+    width: 100%;
+    background: $black;
+    /*This part is important for centering*/
+    display: grid;
+    place-items: center;
+  }
+  
+  .portrait {
+    height: 500px;
+    width: 500px;
+    font-size: 10px;
+    line-height: 10px;
+    font-family: futura-pt, sans-serif;
+    font-weight: 700;
+    font-style: normal;     
+    text-transform: uppercase;
+    background: url('/img/aud3.png') center no-repeat;
+    background-size: contain;
+    overflow: hidden;
+  }
+  
+  /* This part is important for the feature itself */
+  .portrait {
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgba(255,255,255,.1);
+  }
