@@ -1,7 +1,6 @@
 @import url("https://use.typekit.net/lxp1wlv.css");
 * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
@@ -13,15 +12,13 @@ img {
 a {
   text-decoration: none;
   color: #CB672F;
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
 }
 
 a:hover {
   color: #CBC7C4;
-  -webkit-transition-duration: 0.2s;
-          transition-duration: 0.2s;
+  transition-duration: 0.2s;
 }
 
 /* FONTS */
@@ -32,7 +29,6 @@ a:hover {
   font-style: normal;
   font-weight: 700;
 }
-
 @font-face {
   font-family: "bluunext-bold-italic";
   src: url("/assets/bluunext-bolditalic.ttf");
@@ -40,7 +36,6 @@ a:hover {
   font-style: normal;
   font-weight: 700;
 }
-
 /* TEXT-STYLES */
 h1 {
   font-family: futura-pt, sans-serif;
@@ -110,23 +105,15 @@ button {
 button:hover {
   background-color: #292726;
   color: #CBC7C4;
-  -webkit-transition-duration: 0.5s;
-          transition-duration: 0.5s;
+  transition-duration: 0.5s;
 }
 
 /* HOME PAGE */
 section.index-intro {
   height: 65vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column nowrap;
-          flex-flow: column nowrap;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  flex-flow: column nowrap;
+  justify-content: flex-end;
 }
 
 .home-text {
@@ -153,5 +140,4 @@ section.index-intro {
   section.index-intro {
     margin-top: 80px;
   }
-}
-/*# sourceMappingURL=master.css.map */
+}/*# sourceMappingURL=master.css.map */

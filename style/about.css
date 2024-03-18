@@ -3,7 +3,6 @@
   width: 100%;
   background: #292726;
   /*This part is important for centering*/
-  display: -ms-grid;
   display: grid;
   place-items: center;
 }
@@ -27,5 +26,4 @@
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: rgba(255, 255, 255, 0.1);
-}
-/*# sourceMappingURL=about.css.map */
+}/*# sourceMappingURL=about.css.map */
